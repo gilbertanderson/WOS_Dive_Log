@@ -20,8 +20,6 @@
     <li><a href="#!/view2">view2</a></li>
   </ul>
 
-  <h1 id="KkWE7e2GXa2WS-kAl5t"></h1>
-
   <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
   <![endif]-->
@@ -54,11 +52,6 @@
           messagingSenderId: "350927718630"
       };
       firebase.initializeApp(config);
-
-      var idea = document.getElementById('KkWE7e2GXa2WS-kAl5t');
-      var dbRef = firebase.database().ref().child('text');
-      dbRef.on('value', snap => idea.innerText = snap.val());
-
   </script>
 </body>
 </html>
