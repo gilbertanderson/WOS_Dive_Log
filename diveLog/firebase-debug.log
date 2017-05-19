@@ -1,0 +1,89 @@
+[debug] ----------------------------------------------------------------------
+[debug] Command:      /usr/local/Cellar/node/7.10.0/bin/node /usr/local/bin/firebase serve
+[debug] CLI Version:  3.7.0
+[debug] Platform:     darwin
+[debug] Node Version: v7.10.0
+[debug] Time:         Thu May 18 2017 15:26:21 GMT-0500 (CDT)
+[debug] ----------------------------------------------------------------------
+[debug] 
+[debug] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/audubondiveapp  
+ Thu May 18 2017 15:26:21 GMT-0500 (CDT)
+[debug] <<< HTTP RESPONSE 200
+[debug] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/audubondiveapp/tokens  
+ Thu May 18 2017 15:26:21 GMT-0500 (CDT)
+[debug] <<< HTTP RESPONSE 200
+[info] Starting Firebase development server...
+[info] 
+[info] Project Directory: /Users/domoniqueriley/Desktop/WOS_Dive_Log/diveLog
+[debug] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/audubondiveapp  
+ Thu May 18 2017 15:26:21 GMT-0500 (CDT)
+[debug] <<< HTTP RESPONSE 200
+[debug] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/690856753334/clients/_:getWebAppConfig  
+ Thu May 18 2017 15:26:22 GMT-0500 (CDT)
+[debug] <<< HTTP RESPONSE 200
+[info] Public Directory: ./
+[info] 
+[info] Server listening at: http://localhost:5000
+[debug] ----------------------------------------------------------------------
+[debug] Command:      /usr/local/Cellar/node/7.10.0/bin/node /usr/local/bin/firebase serve
+[debug] CLI Version:  3.7.0
+[debug] Platform:     darwin
+[debug] Node Version: v7.10.0
+[debug] Time:         Thu May 18 2017 16:00:45 GMT-0500 (CDT)
+[debug] ----------------------------------------------------------------------
+[debug] 
+[debug] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token { refresh_token: '1/flzyvGslsm0ytcE0Ehuw_k7_iFhz5vAeo_CECHr8X9Q',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  grant_type: 'refresh_token',
+  scope: 'email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
+ Thu May 18 2017 16:00:45 GMT-0500 (CDT)
+[debug] <<< HTTP RESPONSE 200
+[debug] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/audubondiveapp  
+ Thu May 18 2017 16:00:46 GMT-0500 (CDT)
+[debug] <<< HTTP RESPONSE 200
+[debug] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/audubondiveapp/tokens  
+ Thu May 18 2017 16:00:47 GMT-0500 (CDT)
+[debug] <<< HTTP RESPONSE 200
+[info] Starting Firebase development server...
+[info] 
+[info] Project Directory: /Users/domoniqueriley/Desktop/WOS_Dive_Log/diveLog
+[debug] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/audubondiveapp  
+ Thu May 18 2017 16:00:47 GMT-0500 (CDT)
+[debug] <<< HTTP RESPONSE 200
+[debug] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/690856753334/clients/_:getWebAppConfig  
+ Thu May 18 2017 16:00:48 GMT-0500 (CDT)
+[debug] <<< HTTP RESPONSE 200
+[info] Public Directory: ./
+[info] 
+[info] Server listening at: http://localhost:5000
+[debug] ----------------------------------------------------------------------
+[debug] Command:      /usr/local/Cellar/node/7.10.0/bin/node /usr/local/bin/firebase serve
+[debug] CLI Version:  3.7.0
+[debug] Platform:     darwin
+[debug] Node Version: v7.10.0
+[debug] Time:         Thu May 18 2017 16:20:28 GMT-0500 (CDT)
+[debug] ----------------------------------------------------------------------
+[debug] 
+[debug] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/audubondiveapp  
+ Thu May 18 2017 16:20:28 GMT-0500 (CDT)
+[debug] <<< HTTP RESPONSE 200
+[debug] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/audubondiveapp/tokens  
+ Thu May 18 2017 16:20:29 GMT-0500 (CDT)
+[debug] <<< HTTP RESPONSE 200
+[info] Starting Firebase development server...
+[info] 
+[info] Project Directory: /Users/domoniqueriley/Desktop/WOS_Dive_Log/diveLog
+[debug] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/audubondiveapp  
+ Thu May 18 2017 16:20:30 GMT-0500 (CDT)
+[debug] <<< HTTP RESPONSE 200
+[debug] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/690856753334/clients/_:getWebAppConfig  
+ Thu May 18 2017 16:20:30 GMT-0500 (CDT)
+[debug] <<< HTTP RESPONSE 200
+[info] Public Directory: ./
+[info] 
+[info] Server listening at: http://localhost:5000

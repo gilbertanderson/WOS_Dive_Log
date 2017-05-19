@@ -1,0 +1,157 @@
+[debug] ----------------------------------------------------------------------
+[debug] Command:      /usr/local/Cellar/node/7.10.0/bin/node /usr/local/bin/firebase serve
+[debug] CLI Version:  3.7.0
+[debug] Platform:     darwin
+[debug] Node Version: v7.10.0
+[debug] Time:         Thu May 18 2017 14:44:06 GMT-0500 (CDT)
+[debug] ----------------------------------------------------------------------
+[debug]
+[debug] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/audubondiveapp
+ Thu May 18 2017 14:44:06 GMT-0500 (CDT)
+[debug] <<< HTTP RESPONSE 200
+[debug] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/audubondiveapp/tokens
+ Thu May 18 2017 14:44:07 GMT-0500 (CDT)
+[debug] <<< HTTP RESPONSE 200
+[info] Starting Firebase development server...
+[info]
+[info] Project Directory: /Users/domoniqueriley/Desktop/WOS_Dive_Log
+[debug] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/audubondiveapp
+ Thu May 18 2017 14:44:08 GMT-0500 (CDT)
+[debug] <<< HTTP RESPONSE 200
+[debug] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/690856753334/clients/_:getWebAppConfig
+ Thu May 18 2017 14:44:08 GMT-0500 (CDT)
+[debug] <<< HTTP RESPONSE 200
+[debug] TypeError: Cannot read property 'public' of undefined
+    at Server.<anonymous> (/usr/local/lib/node_modules/firebase-tools/commands/serve.js:37:17)
+    at Object.onceWrapper (events.js:293:19)
+    at emitNone (events.js:86:13)
+    at Server.emit (events.js:188:7)
+    at emitListeningNT (net.js:1286:10)
+    at _combinedTickCallback (internal/process/next_tick.js:77:11)
+    at process._tickCallback (internal/process/next_tick.js:104:9)
+[error]
+[error] Error: An unexpected error has occurred.
+[debug] ----------------------------------------------------------------------
+[debug] Command:      /usr/local/Cellar/node/7.10.0/bin/node /usr/local/bin/firebase serve
+[debug] CLI Version:  3.7.0
+[debug] Platform:     darwin
+[debug] Node Version: v7.10.0
+[debug] Time:         Thu May 18 2017 14:44:18 GMT-0500 (CDT)
+[debug] ----------------------------------------------------------------------
+[debug]
+[debug] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/audubondiveapp
+ Thu May 18 2017 14:44:18 GMT-0500 (CDT)
+[debug] <<< HTTP RESPONSE 200
+[debug] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/audubondiveapp/tokens
+ Thu May 18 2017 14:44:18 GMT-0500 (CDT)
+[debug] <<< HTTP RESPONSE 200
+[info] Starting Firebase development server...
+[info]
+[info] Project Directory: /Users/domoniqueriley/Desktop/WOS_Dive_Log
+[debug] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/audubondiveapp
+ Thu May 18 2017 14:44:19 GMT-0500 (CDT)
+[debug] <<< HTTP RESPONSE 200
+[debug] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/690856753334/clients/_:getWebAppConfig
+ Thu May 18 2017 14:44:19 GMT-0500 (CDT)
+[debug] <<< HTTP RESPONSE 200
+[debug] TypeError: Cannot read property 'public' of undefined
+    at Server.<anonymous> (/usr/local/lib/node_modules/firebase-tools/commands/serve.js:37:17)
+    at Object.onceWrapper (events.js:293:19)
+    at emitNone (events.js:86:13)
+    at Server.emit (events.js:188:7)
+    at emitListeningNT (net.js:1286:10)
+    at _combinedTickCallback (internal/process/next_tick.js:77:11)
+    at process._tickCallback (internal/process/next_tick.js:104:9)
+[error]
+[error] Error: An unexpected error has occurred.
+[debug] ----------------------------------------------------------------------
+[debug] Command:      /usr/local/Cellar/node/7.10.0/bin/node /usr/local/bin/firebase serve
+[debug] CLI Version:  3.7.0
+[debug] Platform:     darwin
+[debug] Node Version: v7.10.0
+[debug] Time:         Thu May 18 2017 14:45:23 GMT-0500 (CDT)
+[debug] ----------------------------------------------------------------------
+[debug]
+[debug] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/audubondiveapp
+ Thu May 18 2017 14:45:23 GMT-0500 (CDT)
+[debug] <<< HTTP RESPONSE 200
+[debug] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/audubondiveapp/tokens
+ Thu May 18 2017 14:45:23 GMT-0500 (CDT)
+[debug] <<< HTTP RESPONSE 200
+[info] Starting Firebase development server...
+[info]
+[info] Project Directory: /Users/domoniqueriley/Desktop/WOS_Dive_Log
+[debug] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/audubondiveapp
+ Thu May 18 2017 14:45:24 GMT-0500 (CDT)
+[debug] <<< HTTP RESPONSE 200
+[debug] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/690856753334/clients/_:getWebAppConfig
+ Thu May 18 2017 14:45:24 GMT-0500 (CDT)
+[debug] <<< HTTP RESPONSE 200
+[debug] TypeError: Cannot read property 'public' of undefined
+    at Server.<anonymous> (/usr/local/lib/node_modules/firebase-tools/commands/serve.js:37:17)
+    at Object.onceWrapper (events.js:293:19)
+    at emitNone (events.js:86:13)
+    at Server.emit (events.js:188:7)
+    at emitListeningNT (net.js:1286:10)
+    at _combinedTickCallback (internal/process/next_tick.js:77:11)
+    at process._tickCallback (internal/process/next_tick.js:104:9)
+[error]
+[error] Error: An unexpected error has occurred.
+[debug] ----------------------------------------------------------------------
+[debug] Command:      /usr/local/Cellar/node/7.10.0/bin/node /usr/local/bin/firebase serve
+[debug] CLI Version:  3.7.0
+[debug] Platform:     darwin
+[debug] Node Version: v7.10.0
+[debug] Time:         Thu May 18 2017 14:54:18 GMT-0500 (CDT)
+[debug] ----------------------------------------------------------------------
+[debug]
+[debug] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/audubondiveapp
+ Thu May 18 2017 14:54:18 GMT-0500 (CDT)
+[debug] <<< HTTP RESPONSE 200
+[debug] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/audubondiveapp/tokens
+ Thu May 18 2017 14:54:18 GMT-0500 (CDT)
+[debug] <<< HTTP RESPONSE 200
+[info] Starting Firebase development server...
+[info]
+[info] Project Directory: /Users/domoniqueriley/Desktop/WOS_Dive_Log
+[debug] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/audubondiveapp
+ Thu May 18 2017 14:54:19 GMT-0500 (CDT)
+[debug] <<< HTTP RESPONSE 200
+[debug] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/690856753334/clients/_:getWebAppConfig
+ Thu May 18 2017 14:54:19 GMT-0500 (CDT)
+[debug] <<< HTTP RESPONSE 200
+[debug] TypeError: Cannot read property 'public' of undefined
+    at Server.<anonymous> (/usr/local/lib/node_modules/firebase-tools/commands/serve.js:37:17)
+    at Object.onceWrapper (events.js:293:19)
+    at emitNone (events.js:86:13)
+    at Server.emit (events.js:188:7)
+    at emitListeningNT (net.js:1286:10)
+    at _combinedTickCallback (internal/process/next_tick.js:77:11)
+    at process._tickCallback (internal/process/next_tick.js:104:9)
+[error]
+[error] Error: An unexpected error has occurred.
+[debug] ----------------------------------------------------------------------
+[debug] Command:      /usr/local/Cellar/node/7.10.0/bin/node /usr/local/bin/firebase use --add
+[debug] CLI Version:  3.7.0
+[debug] Platform:     darwin
+[debug] Node Version: v7.10.0
+[debug] Time:         Thu May 18 2017 14:54:26 GMT-0500 (CDT)
+[debug] ----------------------------------------------------------------------
+[debug]
+[debug] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase"]
+[debug] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token { refresh_token: '1/Hmvj3rY0afJolibTK3lgv5EsTTBX0rKnE4tsYOSXZys',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  grant_type: 'refresh_token',
+  scope: 'email https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' }
+ Thu May 18 2017 14:54:26 GMT-0500 (CDT)
+[debug] <<< HTTP RESPONSE 200
+[debug] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects
+ Thu May 18 2017 14:54:27 GMT-0500 (CDT)
+[debug] <<< HTTP RESPONSE 200
+[info]

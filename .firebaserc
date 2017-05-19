@@ -1,0 +1,7 @@
+{
+  "projects": {
+    "default": "audubondiveapp",
+    "stage": "audubondiveapp",
+    "staging": "audubondiveapp"
+  }
+}
