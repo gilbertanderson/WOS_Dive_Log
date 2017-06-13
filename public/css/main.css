@@ -4,8 +4,22 @@
 }
 
 body {
-    font-family: "GE Inspira", sans-serif;
+    font-family: "GE Inspira Pitch Expert", sans-serif;
     transition: background-color .5s;
+}
+
+.container-fluid {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 10px;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    font-family: "GE Inspira Pitch Expert";
 }
 
 .sidenav {
@@ -26,7 +40,7 @@ body {
 .sidenav a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
-    font-size: 25px;
+    font-size: 45px;
     color: #818181;
     display: block;
     transition: 0.3s;
@@ -62,7 +76,7 @@ body {
     position: absolute;
     top: 0;
     right: 25px;
-    font-size: 36px;
+    font-size: 45px;
     margin-left: 50px;
 }
 
@@ -87,7 +101,7 @@ body {
 .metadata {
     border-color: #FFF;
     color: #4d4d4d;
-    font-family: "GE Inspira", sans-serif;
+    font-family: "GE Inspira Pitch Expert", sans-serif;
     font-size: 13px;
     letter-spacing: .2px;
     line-height: 1.6;
@@ -97,8 +111,9 @@ body {
 
 .navbar {
     font-size: 20px;
-
     margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .navbar .label {
@@ -119,6 +134,10 @@ body {
     position: absolute;
     text-align: center;
     top: 10px;
+}
+
+.panel .panel-default {
+    padding: 0px;
 }
 
 .panel-heading {
