@@ -2,9 +2,9 @@
  * Created by gilbertanderson on 6/12/17.
  */
 
-let app = angular.module('diveApp', ['ui.router']);
+angular.module('diveLog', ['ui.router'])
 
-    app.config(['$stateProvider', '$urlRouterProvider',
+    .config(['$stateProvider', '$urlRouterProvider',
         function ($stateProvider, $urlRouterProvider) {
             $urlRouterProvider.otherwise('/home');
             let states = [
@@ -15,7 +15,6 @@ let app = angular.module('diveApp', ['ui.router']);
                         'nav@': {templateUrl: './templates/assets/nav.html'},
                         'body@': {templateUrl: './templates/assets/body.html'},
                         'footer@': {templateUrl: './templates/assets/footer.html'},
-                        'report@': {templateUrl: "./cucumber_report.html"},
                         'sidenav@': {templateUrl: './templates/assets/sidenav.html'}
                     }
                 }

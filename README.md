@@ -39,14 +39,12 @@ This will use the project’s manifest file to deploy the application to Predix 
 * **Dominque Riley** 
 * **Neftali Valdez** 
 
-
 ## License
 
 This project is licensed under the MIT License - see the LICENSE.md file for details
 
 ## Acknowledgments
 * **Andrea Edwards**
-
 
 ```
 git clone https://github.com/aedwardsxula/WOS_Dive_Log.git
