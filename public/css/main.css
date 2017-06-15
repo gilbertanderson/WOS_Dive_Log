@@ -1,0 +1,242 @@
+#main {
+    padding: 16px;
+    transition: margin-left .5s;
+}
+
+body {
+    font-family: "GE Inspira Pitch Expert", sans-serif;
+    transition: background-color .5s;
+}
+
+.container-fluid {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 10px;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    font-family: "GE Inspira Pitch Expert";
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    text-decoration: none;
+
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 45px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover, .offcanvas a:focus {
+    color: #f1f1f1;
+    text-decoration: none;
+
+}
+
+.button {
+    background-color: #3169c4;
+    border: none;
+    color: #FFF;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.button a, .button a:hover, .button a:focus {
+    color: #FFF;
+    text-decoration: none;
+}
+
+.button:hover, .button:focus {
+    background-color: #6da0f2;
+    text-decoration: none;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 45px;
+    margin-left: 50px;
+}
+
+.main h1 {
+    color: #F65A5B;
+    font-size: 64px;
+    line-height: 30px;
+    margin: 0 0 80px;
+    padding: 10px 0;
+    width: 50%;
+}
+
+.main h2 {
+    background-color: #DDD;
+    color: #999;
+    font-size: 20px;
+    margin: 0 0 40px;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.metadata {
+    border-color: #FFF;
+    color: #4d4d4d;
+    font-family: "GE Inspira Pitch Expert", sans-serif;
+    font-size: 13px;
+    letter-spacing: .2px;
+    line-height: 1.6;
+    overflow: auto;
+    padding-bottom: 3px;
+}
+
+.navbar {
+    font-size: 20px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.navbar .label {
+    font-size: 20px;
+}
+
+.navbar .label-container {
+    position: absolute;
+    right: 10px;
+    top: 14px;
+}
+
+.navbar .project-name {
+    font-size: 30px;
+    font-weight: 700;
+    left: 50%;
+    margin-left: -100px;
+    position: absolute;
+    text-align: center;
+    top: 10px;
+}
+
+.panel .panel-default {
+    padding: 0px;
+}
+
+.panel-heading {
+    padding: 0;
+}
+
+.panel-heading .label-container {
+    position: absolute;
+    right: 8px;
+    top: 8px;
+}
+
+.panel-heading .label-container label {
+    margin-left: 5px;
+    padding: 5px;
+}
+
+.panel-heading a {
+    display: block;
+    padding: 10px 15px;
+    position: relative;
+    text-decoration: none;
+}
+
+.panel-heading i.glyphicon-chevron-down {
+    display: none;
+}
+
+.panel-heading i.glyphicon-chevron-right {
+    display: inline-block;
+}
+
+.panel-heading.open i.glyphicon-chevron-down {
+    display: inline-block;
+}
+
+.panel-heading.open i.glyphicon-chevron-right {
+    display: none;
+}
+
+.panel-title b {
+    padding-right: 10px;
+}
+
+.main {
+    background-color: #f2f2f2;
+    padding: 40px 0;
+}
+
+.header {
+    padding: 15px;
+}
+
+.header h1 {
+    display: inline-block;
+}
+
+.header img {
+    display: inline-block;
+}
+
+.footer {
+    margin: 80px 0 110px;
+    text-align: center;
+}
+
+.footer h2 {
+    font-size: 24px;
+    margin-bottom: 25px;
+}
+
+.footer img {
+    margin: 0 10px;
+}
+
+.footer-container {
+    background-color: transparent;
+    bottom: 10px;
+    margin-right: 10px;
+    margin-top: 5px;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    width: 18%;
+    z-index: 10;
+}
+
+.footer-div {
+    height: 3.5%;
+    text-align: right;
+    vertical-align: middle;
+    width: 100%;
+}
+
+.footer-link {
+    float: right;
+    font-size: 13px;
+}
+
+.footer-link:hover {
+    color: #A9A9A9;
+}
