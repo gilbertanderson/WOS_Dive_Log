@@ -1,5 +1,17 @@
 
-//var diversRef = firebase.database().ref("Divers/");
+var diversRef = firebase.database().ref("Divers/");
+
+var diver = firebase.database().ref().child('-KkWE7dwmq2LtDYDZLzD');
+
+// diversRef.set({
+//     diver:{
+//      name: "Neftali",
+//      date: "03/23/2016",
+//      depth: 178,
+//      purpose: "whatever the reason is",
+//      time: "1430"
+//     }   
+// });
 
 function logIn() {
   var email = document.getElementById('mail').value;
@@ -20,11 +32,11 @@ function logIn() {
       document.getElementById('sign-in').disabled = false;
       // [END_EXCLUDE]
     })
-    .then(function(data){
-    console.log("LOGGED IN: " + JSON.stringify(data))
+    .then(function (data) {
+      console.log("LOGGED IN: " + JSON.stringify(data.email))
       checkState()
     });
-    
+
   //document.getElementById('sign-in').disabled = true;
 }
 function logOut() {
@@ -33,23 +45,48 @@ function logOut() {
     checkState();
     //console.log('sign out function is working');
   }
-  else{
+  else {
     alert("You are already logged out... dummy")
   }
 }
 
 function checkState() {
   firebase.auth().onAuthStateChanged(function (user) {
-   // console.log("STATE CHANGED")
+    // console.log("STATE CHANGED")
     if (user) {
       //console.log("User present")
-      window.location = "welcome.html";
+      window.location = "nav_page.html";
+      console.log(user);
     }
-    else{
+    else {
       //console.log("User NOT Present")
       window.location = "index.html";
     }
+    
 
+  });
+}
+
+function getCurrentUser(){
+      
+      var user = firebase.auth().currentUser;
+      console.log(user);
+      let id = user.uid;
+      fbdbref.child.push({
+        id: id,
+        
+      }) 
+      
+    }
+
+var user = firebase.auth().currentUser;
+if (user != null) {
+  user.providerData.forEach(function (profile) {
+    console.log("Sign-in provider: " + profile.providerId);
+    console.log("  Provider-specific UID: " + profile.uid);
+    console.log("  Name: " + profile.displayName);
+    console.log("  Email: " + profile.email);
+    console.log("  Photo URL: " + profile.photoURL);
   });
 }
 
@@ -68,13 +105,30 @@ function checkState() {
 
 // }
 
-// diversRef.push({
-//     name : "Dominique",
-//     date : "03/23/2016",
-//     time : "1430",
-//     depth: 178,
-//     purpose : "whatever the reason is"
-// })
+diversRef.push({
+  profile: {
+    name: "neftali",
+    id: "0001",
+    email: "nefty@example.com",
+    company: "diver inc"
+  },
+  dives: {
+    dive_1:{
+      name: "Dominique",
+      date: "03/24/2016",
+      time: "1430",
+      depth: 178,
+      purpose: "To catch Willie!"
+    },
+    dive_2:{
+      name: "Dominique",
+      date: "03/24/2016",
+      time: "1450",
+      depth: 158,
+      purpose: "To free Willie!"
+    }
+  }  
+})
 // diversRef.push({
 //     name : "Guil",
 //     date : "03/23/2016",
@@ -115,18 +169,7 @@ function checkState() {
 
 
 
-//
-// diversRef.set({
-//    John: {
-//       number: 1,
-//       age: 30
-//    },
-//
-//    Amanda: {
-//       number: 2,
-//       age: 20
-//    }
-// });
+
 
 // var johnRef = firebase.database().ref("players/John");
 //
