@@ -81,7 +81,6 @@ function getCurrentUser(){
       
     }
 
-
 function keys(){
 diversRef.push({
     name: "neftali",
