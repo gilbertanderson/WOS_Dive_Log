@@ -1,29 +1,65 @@
+
 var diversRef = firebase.database().ref("Divers/");
-
 var diveRef = firebase.database().ref("Dives/");
-
-
 var diver = firebase.database().ref().child('-KkWE7dwmq2LtDYDZLzD');
 
-// diversRef.set({
-//     diver:{
-//      name: "Neftali",
-//      date: "03/23/2016",
-//      depth: 178,
-//      purpose: "whatever the reason is",
-//      time: "1430"
-//     }   
-// });
+function submit(){
+
+var diverName = document.getElementById('name').value;
+var divePurpose = document.getElementById('purpose').value;
+var diveDate = document.getElementById('date').value;
+var diverBudy = document.getElementById('budy').value;
+
+  diveRef.push({
+    Name: diverName,
+    Purpose: divePurpose,
+    Date: diveDate,
+    Buddy: diverBudy
+  })
+}
+
+function signUp(){
+  
+  var name = document.getElementById('name').value;
+  var email = document.getElementById('email').value;
+  var password = document.getElementById('password').value;
+
+  diversRef.push({
+    name: name,
+    email: email
+  })
+
+  firebase.auth().createUserWithEmailAndPassword(email, password).catch(function(error) {
+  // Handle Errors here.
+  var errorCode = error.code;
+  var errorMessage = error.message;
+  // ...
+  });
+
+}
+function displaySignUp(){
+    console.log("function is working");
+
+  window.location.href="sign_up.html"
+  
+}
+
+diversRef.child("-KnL9JLKuolQlU5fj5af").on('value', function(snap){
+    console.log(snap.val());
+});
 
 function logIn() {
+
   var email = document.getElementById('mail').value;
   var password = document.getElementById('password').value;
 
   firebase.auth().signInWithEmailAndPassword(email, password)
     .catch(function (error) {
+
       // Handle Errors here.
       var errorCode = error.code;
       var errorMessage = error.message;
+
       // [START_EXCLUDE]
       if (errorCode === 'auth/wrong-password') {
         alert('Wrong password.');
@@ -64,142 +100,16 @@ function checkState() {
       //console.log("User NOT Present")
       window.location = "index.html";
     }
-    
-
-  });
+  })
 }
 
-function getCurrentUser(){
-      
-      var user = firebase.auth().currentUser;
-      console.log(user);
-      let id = user.uid;
-      fbdbref.child.push({
-        id: id,
-        
-      }) 
-      
-    }
+function getCurrentUser() {
 
+  var user = firebase.auth().currentUser;
+  console.log(user);
+  let id = user.uid;
+  fbdbref.child.push({
+    id: id,
 
-function keys(){
-diversRef.push({
-    name: "neftali",
-    id: "0001",
-    email: "nefty@example.com",
-    company: "diver inc"
-})
-diversRef.push({
-    name: "dominique",
-    id: "0002",
-    email: "dom@example.com",
-    company: "diver inc"
-})
-diversRef.push({
-    name: "gilbert",
-    id: "0002",
-    email: "gil@example.com",
-    company: "diver inc"
-})
-
-diveRef.push({
-      date: "03/24/2016",
-      time: "1430",
-      depth: 178,
-      purpose: "To catch Willie!"
-})
-diveRef.push({
-      name: "Dominique",
-      date: "03/24/2016",
-      time: "1450",
-      depth: 158,
-      purpose: "To free Willie!"
-})
+  })
 }
-
-diversRef.child("-KmgsjObGUfnVco7mpMh").on('value', function(snap){
-    console.log(snap.val());
-});
-
-diveRef.child("-KmgsjOlpWDwBZMAcm_h").on('value', function(snap){
-    console.log(snap.val());
-});
-    
-
-// var diver = diversRef.child('-KkWE7dwmq2LtDYDZLzD').on('value', function(snap){
-//     console.log(snap.val());
-// })
-
-// else{
-//     console.log(text);
-
-// }
-
-//   dives: {
-//     dive_1:{
-//       name: "Dominique",
-//       date: "03/24/2016",
-//       time: "1430",
-//       depth: 178,
-//       purpose: "To catch Willie!"
-//     },
-//     dive_2:{
-//       name: "Dominique",
-//       date: "03/24/2016",
-//       time: "1450",
-//       depth: 158,
-//       purpose: "To free Willie!"
-//     }
-//   }  
-// })
-// diversRef.push({
-//     name : "Guil",
-//     date : "03/23/2016",
-//     time : "1430",
-//     depth: 178,
-//     purpose : "whatever the reason is"
-// })
-
-// function readUsers(){
-// diversRef.on('value', function(snap){
-//   var divers = snap.val();
-//   console.log(snap.val());
-//   return divers;
-// });
-// }
-//
-// var mainText = document.getElementById("mainText");
-// var submitBtn = document.getElementById("submitBtn");
-// var fireHeading = document.getElementById("fireHeading");
-//
-// var headingRef = firebase.database().ref().child("Heading");
-//
-// headingRef.on('value', function (snap) {
-//     console.log(snap.val());
-// });
-//
-// function submitClick(){
-//   var firebaseRef = firebase.database().ref();
-//
-//  // console.log(mainText.value);
-//
-//   firebaseRef.push().set("hello");
-// }
-
-
-
-
-
-// var johnRef = firebase.database().ref("players/John");
-//
-// johnRef.update({
-//    "number": 10
-// });
-//
-// diversRef.push({
-//    name: "Amanda",
-//    number: 2,
-//    age: 20
-// });
-
-
