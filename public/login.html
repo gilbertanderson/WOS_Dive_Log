@@ -3,28 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <title>Dive Log</title>
+    <link href="https://bootswatch.com/cyborg/bootstrap.min.css" rel="stylesheet"/>
 </head>
 <body>
 
 <div class="mainDiv" align="center">
-    <h1 id="Heading"> Firebase Web App</h1>
+    <h1 id="Heading">Firebase Web App</h1>
 
     <fieldset>
         <legend>Login Information</legend>
         <label for="mail">Email Address</label>
         <br>
         <input type="email" name="user_email" id="mail">
-        <br>
+        <br><br>
         <label for="password">Password</label>
         <br>
         <input type="password" name="user_password" id="password">
-        <br>
-        <button id="sign-in" type="submit" onclick="logIn()">Sign In</button>
+        <br><br>
+        <button class="btn btn-default" id="sign-in" type="submit" onclick="logIn()">Sign In</button>
     </fieldset>
 </div>
 
 <script src="https://www.gstatic.com/firebasejs/4.1.2/firebase.js"></script>
 <script src="./js/firebase.js"></script>
+<script src="./js/auth.js"></script>
 
 </body>
 </html>
