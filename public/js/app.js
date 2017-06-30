@@ -107,7 +107,7 @@ function checkState() {
     // console.log("STATE CHANGED")
     if (user) {
       //console.log("User present")
-      window.location = "./index.html";
+      window.location = "../dash.html";
       console.log(user);
     }
     else {
