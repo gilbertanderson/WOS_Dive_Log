@@ -4,6 +4,9 @@
 
 angular.module('diveLog', ['ui.router'])
 
+    .controller('MainCtrl', function ($scope) {
+    })
+
     .config(['$stateProvider', '$urlRouterProvider',
         function ($stateProvider, $urlRouterProvider) {
             $urlRouterProvider.otherwise('/home');

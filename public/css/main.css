@@ -3,200 +3,94 @@
     transition: margin-left .5s;
 }
 
-body {
-    font-family: "GE Inspira Pitch Expert", sans-serif;
-    transition: background-color .5s;
+#scenario-description {
+    padding-bottom: 1em;
+    padding-left: .2em;
 }
 
-.container-fluid {
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 10px;
+.chart {
+    padding-bottom: 15px;
 }
 
-.card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    max-width: 300px;
-    margin: auto;
-    text-align: center;
-    font-family: "GE Inspira Pitch Expert";
-}
-
-.sidenav {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: #111;
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 60px;
-    text-decoration: none;
-
-}
-
-.sidenav a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 45px;
-    color: #818181;
-    display: block;
-    transition: 0.3s;
-}
-
-.sidenav a:hover, .offcanvas a:focus {
-    color: #f1f1f1;
-    text-decoration: none;
-
+.description {
+    background-color: #FFF;
+    border-color: #FFF;
+    color: #6f6f6f;
+    font-family: "GE Inspira", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.6;
+    padding: .1em .5em 1.2em 1.5em;
 }
 
 .button {
-    background-color: #3169c4;
+    border-radius: 5px 5px 5px 5px;
+    padding: 10px 20px;
+    font-size: 20px;
+}
+
+.button-circle {
+    padding: 5px 8px;
+    text-align: center;
+    line-height: 1.33;
+    font-size: 14px;
+    border-radius: 50%;
+}
+
+.button, .button-circle {
+    background-color: #005fa1;
     border: none;
     color: #FFF;
     cursor: pointer;
-    font-size: 16px;
-    padding: 10px;
     text-decoration: none;
+    display: inline-block;
+    outline: 0;
+    vertical-align: middle;
+    overflow: hidden;
+    text-align: center;
+    white-space: nowrap;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.button a, .button a:hover, .button a:focus {
+.button a, .button a:hover, .button a:focus, .button-circle a, .button-circle a:hover, .button-circle a:focus {
     color: #FFF;
     text-decoration: none;
 }
 
-.button:hover, .button:focus {
+.button:hover, .button:focus, .button-circle:hover, .button-circle:focus {
     background-color: #6da0f2;
     text-decoration: none;
 }
 
-.sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 45px;
-    margin-left: 50px;
+.img-circle {
+    display: inline;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-top: -15px;
+    margin-bottom: -5px;
 }
 
-.main h1 {
-    color: #F65A5B;
-    font-size: 64px;
-    line-height: 30px;
-    margin: 0 0 80px;
-    padding: 10px 0;
-    width: 50%;
-}
-
-.main h2 {
-    background-color: #DDD;
-    color: #999;
-    font-size: 20px;
-    margin: 0 0 40px;
-    padding: 20px 0;
+div.card {
+    border-radius: 5px;
+    background-color: #222222;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     text-align: center;
+    padding: 10px;
 }
 
-.metadata {
-    border-color: #FFF;
-    color: #4d4d4d;
-    font-family: "GE Inspira Pitch Expert", sans-serif;
-    font-size: 13px;
-    letter-spacing: .2px;
-    line-height: 1.6;
-    overflow: auto;
-    padding-bottom: 3px;
-}
-
-.navbar {
-    font-size: 20px;
-    margin-bottom: 10px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.navbar .label {
-    font-size: 20px;
-}
-
-.navbar .label-container {
-    position: absolute;
-    right: 10px;
-    top: 14px;
-}
-
-.navbar .project-name {
-    font-size: 30px;
-    font-weight: 700;
-    left: 50%;
-    margin-left: -100px;
-    position: absolute;
-    text-align: center;
-    top: 10px;
-}
-
-.panel .panel-default {
-    padding: 0px;
-}
-
-.panel-heading {
-    padding: 0;
-}
-
-.panel-heading .label-container {
-    position: absolute;
-    right: 8px;
-    top: 8px;
-}
-
-.panel-heading .label-container label {
-    margin-left: 5px;
-    padding: 5px;
-}
-
-.panel-heading a {
-    display: block;
-    padding: 10px 15px;
+.dropdown {
+    display: inline-block;
     position: relative;
-    text-decoration: none;
 }
 
-.panel-heading i.glyphicon-chevron-down {
+.dropdownContent {
+    background-color: #f9f9f9;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
     display: none;
-}
-
-.panel-heading i.glyphicon-chevron-right {
-    display: inline-block;
-}
-
-.panel-heading.open i.glyphicon-chevron-down {
-    display: inline-block;
-}
-
-.panel-heading.open i.glyphicon-chevron-right {
-    display: none;
-}
-
-.panel-title b {
-    padding-right: 10px;
-}
-
-.main {
-    background-color: #f2f2f2;
-    padding: 40px 0;
-}
-
-.header {
-    padding: 15px;
-}
-
-.header h1 {
-    display: inline-block;
-}
-
-.header img {
-    display: inline-block;
+    min-width: 160px;
+    padding: 12px 16px;
+    position: absolute;
+    z-index: 1;
 }
 
 .footer {
@@ -240,3 +134,444 @@ body {
 .footer-link:hover {
     color: #A9A9A9;
 }
+
+.generated-on {
+    padding-bottom: 10px;
+    text-align: right;
+}
+
+.header {
+    padding: 15px;
+}
+
+.header h1 {
+    display: inline-block;
+}
+
+.header img {
+    display: inline-block;
+}
+
+.info {
+    background-color: #fbfbfb;
+}
+
+.left {
+    float: left;
+}
+
+.main {
+    background-color: #f2f2f2;
+    padding: 10px 0;
+}
+
+.main h1 {
+    color: #F65A5B;
+    font-size: 45px;
+    line-height: 30px;
+    margin: 0 0 80px;
+    padding: 10px 0;
+    width: 50%;
+}
+
+.main h2 {
+    background-color: #DDD;
+    color: #999;
+    font-size: 20px;
+    margin: 0 0 40px;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.metadata {
+    border-color: #FFF;
+    color: #4d4d4d;
+    font-family: "GE Inspira", sans-serif;
+    font-size: 13px;
+    letter-spacing: .2px;
+    line-height: 1.6;
+    overflow: auto;
+    padding-bottom: 3px;
+}
+
+.navbar {
+    font-size: 20px;
+    margin-bottom: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.navbar-collapse.collapse {
+    display: block!important;
+}
+
+.navbar-nav>li, .navbar-nav {
+    float: left !important;
+}
+
+.navbar-nav.navbar-right:last-child {
+    margin-right: -15px !important;
+}
+
+.navbar-right {
+    float: right!important;
+}
+
+.navbar .label {
+    font-size: 20px;
+}
+
+.navbar .label-container {
+    position: absolute;
+    right: 10px;
+    top: 14px;
+}
+
+.navbar .project-name {
+    font-size: 30px;
+    font-weight: 700;
+    left: 50%;
+    margin-left: -100px;
+    position: absolute;
+    text-align: center;
+    top: 10px;
+}
+
+div.panel-default {
+    background-color: white;!important;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);  !important;
+}
+
+div.panel-heading {
+    padding: 10px 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);!important;
+    margin-top: -5px;
+    margin-bottom: 5px;
+    margin-left: -1px;
+    margin-right: -1px;
+}
+
+.panel-heading .label-container {
+    position: absolute;
+    right: 8px;
+    top: 8px;
+}
+
+.panel-heading .label-container label {
+    margin-left: 5px;
+    padding: 5px;
+}
+
+.panel-heading a {
+    display: block;
+    padding: 10px 10px;
+    position: relative;
+    text-decoration: none;
+}
+
+.panel-heading i.glyphicon-chevron-down {
+    display: none;
+}
+
+.panel-heading i.glyphicon-chevron-right {
+    display: inline-block;
+}
+
+.panel-heading.open i.glyphicon-chevron-down {
+    display: inline-block;
+}
+
+.panel-heading.open i.glyphicon-chevron-right {
+    display: none;
+}
+
+.panel-title b {
+    padding-right: 10px;
+}
+
+.panel-body {
+    font-size: 20px;
+}
+
+.scenarioTitle {
+    width: 80%;
+}
+
+.screenshot {
+    padding: 2% 0;
+}
+
+.scrollBar {
+    overflow-x: scroll;
+}
+
+.show {
+    display: block;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    text-decoration: none;
+    box-shadow: 2px 8px 16px 2px rgba(0, 0, 0, 0.2), 2px 6px 20px 2px rgba(0, 0, 0, 0.19);!important;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 35px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover, .offcanvas a:focus, .sidenav a:disabled {
+    color: #f1f1f1;
+    text-decoration: none;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 45px;
+    margin-left: 50px;
+}
+
+.step-duration {
+    float: right;
+}
+
+.tag {
+    color: #696969;
+    font-family: "Lato", sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: .3px;
+}
+
+.tags {
+    margin-bottom: -4px;
+    margin-left: 18px;
+    margin-right: 20px;
+    padding-top: 5px;
+}
+
+.testDropdown, .testDropdownCore, .testDropdownCore2 {
+    background-color: #80f9e9;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    display: none;
+    min-width: 160px;
+    padding: 12px 16px;
+    position: relative;
+    z-index: 1;
+}
+
+.testRunner {
+    display: inline-block;
+    position: relative;
+}
+
+.thumbnail {
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 50px;
+    padding: 50px;
+    position: relative;
+}
+
+.thumbnail img {
+    margin-bottom: 30px;
+    margin-top: 10px;
+    max-width: 100%;
+}
+
+button, button a {
+    text-decoration: none;
+}
+
+body {
+    background-image: url("../img/SSObackground.png");
+!important;
+    font-family: "GE Inspira", sans-serif;
+    transition: background-color .5s;
+}
+
+div.chart div div svg rect {
+    fill: #f5f5f5;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid #000;
+}
+
+table.arguments {
+    margin-left: 30px;
+}
+
+th {
+    background-color: #f5f5f5;
+    color: #000;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+}
+
+@media (min-width: 768px) {
+    .pull-right-lg {
+        float: left;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .pull-right-lg {
+        float: right;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .pull-right-lg {
+        float: right;
+    }
+}
+
+@media (min-width: 1200px) {
+    .pull-right-lg {
+        float: right;
+    }
+}
+
+.card b {
+    padding: 10px;
+    color: white;
+}
+
+/*sign up page*/
+/* Full-width input fields */
+input[type=text], input[type=password], input[type=date] {
+    /*width: 100%;*/
+    position: relative;
+    text-align: justify;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/*!* Set a style for all buttons *!*/
+/*button {*/
+    /*color: white;*/
+    /*padding: 14px 20px;*/
+    /*margin: 8px 0;*/
+    /*border: none;*/
+    /*cursor: pointer;*/
+    /*width: 100%;*/
+/*}*/
+
+/*!* Extra styles for the cancel button *!*/
+/*.cancelbtn {*/
+    /*padding: 14px 20px;*/
+    /*background-color: #f44336;*/
+/*}*/
+
+/*!* Float cancel and signup buttons and add an equal width *!*/
+/*.cancelbtn,.signupbtn {*/
+    /*float: left;*/
+    /*width: 50%;*/
+/*}*/
+
+/*!* Add padding to container elements *!*/
+/*.container {*/
+    /*padding: 16px;*/
+/*}*/
+
+/*!* Clear floats *!*/
+/*.clearfix::after {*/
+    /*content: "";*/
+    /*clear: both;*/
+    /*display: table;*/
+/*}*/
+
+/*form {*/
+    /*border: 3px solid #f1f1f1;*/
+/*}*/
+
+/*input[type=text],*/
+/*input[type=password] {*/
+    /*width: 100%;*/
+    /*padding: 12px 20px;*/
+    /*margin: 8px 0;*/
+    /*display: inline-block;*/
+    /*border: 1px solid #ccc;*/
+    /*box-sizing: border-box;*/
+/*}*/
+
+/*button {*/
+    /*color: white;*/
+    /*padding: 14px 20px;*/
+    /*margin: 8px 0;*/
+    /*border: none;*/
+    /*cursor: pointer;*/
+/*}*/
+
+/*button:hover {*/
+    /*opacity: 0.8;*/
+/*}*/
+
+/*.cancelbtn {*/
+    /*width: auto;*/
+    /*padding: 10px 18px;*/
+    /*background-color: #f44336;*/
+/*}*/
+
+/*.imgcontainer {*/
+    /*text-align: center;*/
+    /*margin: 24px 0 12px 0;*/
+/*}*/
+
+/*img.avatar {*/
+    /*width: 40%;*/
+    /*border-radius: 50%;*/
+/*}*/
+
+/*.container {*/
+    /*padding: 16px;*/
+/*}*/
+
+/*span.psw {*/
+    /*float: right;*/
+    /*padding-top: 16px;*/
+/*}*/
+
+/*!* Change styles for span and cancel button on extra small screens *!*/
+
+/*@media screen and (max-width: 300px) {*/
+    /*span.psw {*/
+        /*display: block;*/
+        /*float: none;*/
+    /*}*/
+
+    /*.cancelbtn {*/
+        /*width: 100%;*/
+    /*}*/
+/*}*/

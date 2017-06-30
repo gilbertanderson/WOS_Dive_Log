@@ -55,12 +55,12 @@ function checkState() {
     // console.log("STATE CHANGED")
     if (user) {
       //console.log("User present")
-      window.location = "nav_page.html";
+      window.location = "../nav_page.html";
       console.log(user);
     }
     else {
       //console.log("User NOT Present")
-      window.location = "index.html";
+      window.location = "../login.html";
     }
     
 

@@ -1,10 +1,30 @@
 <div class="container-fluid">
     <div class="panel panel-default">
         <div class="panel-heading">
-            <h1 class="text-center">Dive Log</h1>
+            <div class="text-center">
+                <h1 class="text-primary"><b>Dive Log</b></h1>
+            </div>
         </div>
+
         <div class="panel-body">
-            <h4 class="text-center">Dives</h4>
+            <h2 class="text-center"><b>Add Dive</b></h2>
+            <div class="text-center">
+                <label for="name">Enter dives name: </label>
+                <input type="text" name="diver_name" id="name"><br>
+
+                <label for="purpose">Purpose of dive:</label>
+                <input type="text" name="dive_purpose" id="purpose"><br>
+
+                <label for="date">Date of dive:</label>
+                <input type="date" name="dive_date" id="date"><br>
+
+                <label for="buddy">Dive buddies:</label>
+                <input type="text" name="dive_buddy" id="buddy"><br>
+
+                <label>&nbsp;</label>
+                <br>
+                <button id="diver" class="button" type="submit" onclick="submit()">Submit</button>
+            </div>
             <div class="text-center">
             </div>
         </div>
