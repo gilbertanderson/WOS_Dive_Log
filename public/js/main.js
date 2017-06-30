@@ -18,7 +18,9 @@ angular.module('diveLog', ['ui.router'])
                         'nav@': {templateUrl: './templates/assets/nav.html'},
                         'body@': {templateUrl: './templates/assets/body.html'},
                         'footer@': {templateUrl: './templates/assets/footer.html'},
-                        'sidenav@': {templateUrl: './templates/assets/sidenav.html'}
+                        'sidenav@': {templateUrl: './templates/assets/sidenav.html'},
+                        'signup@': {templateUrl: './templates/assets/signup.html'}
+
                     }
                 }
             ];

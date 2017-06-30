@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="diveLog">
 
 <head>
     <style>
@@ -12,15 +12,15 @@
 
 </head>
 
-<body>
+<body ng-controller="MainCtrl">
 
 <div class="header">
     <div class="panel panel-default">
         <div class="text-center">
             <div class="panel-heading">
-                <h2 class="text-primary"><b>Dive Log</b><br>
+                <h1 class="text-primary"><b>Dive Log</b><br>
                     <small>Application</small>
-                </h2>
+                </h1>
             </div>
         </div>
         <div class="panel-body">
@@ -38,7 +38,10 @@
                             <input type="password" placeholder="Enter Password" name="psw" id="password" required>
                             <br><br>
                             <button id="sign-in" type="submit" class="button" onclick="logIn()">Sign In</button>
-                            <button id="sign-up" class="button" onclick="displaySignUp()">Sign Up</button>
+                            <button id="sign-up" type="submit" class="button" ng-click="bool=!bool">Sign Up</button>
+                            <div ng-show="bool">
+                                <div ui-view="signup"></div>
+                            </div>
                             <br><br>
 
                         </div>

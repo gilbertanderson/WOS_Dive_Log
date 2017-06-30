@@ -14,7 +14,17 @@
 
 <div id="main">
     <div ui-view="nav"></div>
-    <div ui-view="body"></div>
+    <div class="container-fluid">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <div class="text-center">
+                    <h1 class="text-primary"><b>Dive Log</b></h1>
+                </div>
+            </div>
+            <div ui-view="body"></div>
+            <!--<div ui-view="signup"></div>-->
+        </div>
+    </div>
     <div ui-view="report"></div>
     <div ui-view="footer"></div>
     <div ui-view="sidenav"></div>
