@@ -30,25 +30,81 @@
     </script>
 </head>
 
-<body style="background-color: powderblue;">
+<style>
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+div {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+</style>
+
+<body style="background-color: white;">
     <div>
-        <h1 style="font-family:Helvetica;color:red">Audubon Dive Application</h1>
-        <label="name">Enter dives name: </label>
-            <input type="text" name="diver_name" id="name"><br>
+        <center>
+          <h1 style="font-family:Helvetica;color:Black">Dive Information</h1>
+        </center>
 
-            <label for="purpose">Purpose of dive:</label>
-            <input type="text" name="dive_purpose" id="purpose"><br>
+        <label for="ddate">Date:<br /></label>
+        <input type="date" type="text" name="dive_date" id="date"><br>
+        <br />
 
-            <label for="ddate">Date of dive:</label>
-            <input type="date" type="text" name="dive_date" id="date"><br>
+        <label for="purpose">Purpose:<br /> </label>
+        <input type="text" name="dive_purpose" id="purpose"><br>
+        <br />
+        <label for="depth">Depth:<br /></label>
+        <input type="text" name="depth" id="depth"><br>
+        <br />
 
-            <label for="dbuds">Dive Buddies:</label>
-            <input type="text" name="dive_budy" id="budy"><br>
+        <label for="temp">Temperature:<br /></label>
+        <input type="text" name="temp" id="temp"><br>
+        <br />
 
-            <label>&nbsp;</label>
-            <!--<input type="button" value="Submit" onclick="submit()" />-->
-            <!--<input type="button" value="Clear" onclick="" />-->
-            <button id="diver" type="submit" onclick="submit()">Submit</button>
+        <label for="location">Location:<br /></label>
+        <input type="text" name="location" id="location"><br>
+        <br />
+
+        <label for="btime">Bottom Time:<br /></label>
+        <input type="text" name="bottom_time" id="btime"><br>
+        <br />
+
+        <label for="dbuds">Dive Buddy(ies):<br /></label>
+        <input type="text" name="dive_buddy" id="buddy"><br>
+        <br />
+
+        <label for="comments">Comments:<br /></label>
+        <input type="text" name="comments" id="comments"><br>
+        <br />
+
+
+        <label>&nbsp;</label>
+        <!--<input type="button" value="Submit" onclick="submit()" />-->
+        <!--<input type="button" value="Clear" onclick="" />-->
+        <button id="diver" type="submit" onclick="submit()" value="Submit">Submit</button>
     </div>
 </body>
 

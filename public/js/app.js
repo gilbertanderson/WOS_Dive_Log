@@ -1,25 +1,34 @@
 
+
 var diversRef = firebase.database().ref("Divers/");
 var diveRef = firebase.database().ref("Dives/");
 var diver = firebase.database().ref().child('-KkWE7dwmq2LtDYDZLzD');
 
 function submit(){
 
-var diverName = document.getElementById('name').value;
 var divePurpose = document.getElementById('purpose').value;
 var diveDate = document.getElementById('date').value;
-var diverBudy = document.getElementById('budy').value;
+var diverBudy = document.getElementById('buddy').value;
+var diveDepth = document.getElementById('depth').value;
+var temperature = document.getElementById('temp').value;
+var location = document.getElementById('location').value;
+var bottomTime = document.getElementById('btime').value;
+var comments = document.getElementById('comments').value;
 
   diveRef.push({
-    Name: diverName,
     Purpose: divePurpose,
     Date: diveDate,
-    Buddy: diverBudy
+    Buddy: diverBudy,
+    Depth : diveDepth,
+    Temperature: temperature,
+    Location: location,
+    BottomTime: bottomTime,
+    Comments: comments
   })
 }
 
 function signUp(){
-  
+
   var name = document.getElementById('name').value;
   var email = document.getElementById('email').value;
   var password = document.getElementById('password').value;
@@ -40,8 +49,13 @@ function signUp(){
 function displaySignUp(){
     console.log("function is working");
 
+<<<<<<< HEAD:public/js/app.js
   window.location.href="../templates/assets/signup.html"
   
+=======
+  window.location.href="sign_up.html"
+
+>>>>>>> main:app.js
 }
 
 diversRef.child("-KnL9JLKuolQlU5fj5af").on('value', function(snap){
